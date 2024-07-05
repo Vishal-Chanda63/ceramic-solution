@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
 
 body {
     font-family: "Plus Jakarta Sans",
         sans-serif !important;
+
 }
 
 .manrope_font {
@@ -706,7 +711,7 @@ a {
 
 /* ================================== HERO SECTION START ============================================== */
 .main-top-section {
-    background-image: url("../image/hero_bg.png");
+    background-image: url("/assets/image/png/hero_bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -887,7 +892,7 @@ a {
 
 /* ============== GET IN TOUCH WITH US ============= */
 .intersted_box {
-    background-image: url("../image/get-in-touch-bg.png");
+    background-image: url("/assets/image/png//get-in-touch-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -973,7 +978,7 @@ a {
     height: 1.25rem;
     margin-left: auto;
     content: "";
-    background-image: url("../image/faq_close_icon.svg") !important;
+    background-image: url("/assets/image/svg/faq_arrow.svg") !important;
     background-repeat: no-repeat;
     background-size: 1.25rem;
     transition: transform .2s ease-in-out;
