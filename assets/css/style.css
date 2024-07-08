@@ -87,7 +87,7 @@ body {
         --font-m: 16px;
         --font-md: 18px;
         --font-lg: 20px;
-        --font-xl: 22px;
+        --font-xl: 18px;
         --font-xxg: 32px;
         --font-xxl: 40px;
     }
@@ -100,8 +100,8 @@ body {
         --font-m: 16px;
         --font-md: 16px;
         --font-lg: 18px;
-        --font-xl: 20px;
-        --font-xxg: 28px;
+        --font-xl: 16px;
+        --font-xxg: 34px;
         --font-xxl: 35px;
     }
 }
@@ -113,8 +113,8 @@ body {
         --font-m: 14px;
         --font-md: 14px;
         --font-lg: 16px;
-        --font-xl: 18px;
-        --font-xxg: 26px;
+        --font-xl: 14px;
+        --font-xxg: 30px;
         --font-xxl: 32px;
     }
 }
@@ -228,10 +228,12 @@ body {
     font-size: var(--font-xxl);
 }
 
+.cursur {
+    cursor: pointer;
+}
+
 
 /*============================ NAVBAR ============================ */
-
-/* NAVBAR-CSS */
 
 .nav-quantum {
     background-color: white;
@@ -377,6 +379,7 @@ a {
 }
 
 .navbar-wrapper .animate .first {
+    background-color: #fff !important;
     top: 11px;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -392,6 +395,7 @@ a {
 }
 
 .navbar-wrapper .animate .third {
+    background-color: #fff !important;
     top: 11px;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
@@ -505,7 +509,7 @@ a {
         -webkit-animation: mymove 0.9s;
         animation: mymove 0.9s;
         -webkit-animation-delay: 0.7s;
-        animation-delay: 0.7s;
+        animation-delay: 0.6s;
         -webkit-transform: translateY(10px);
         transform: translateY(10px);
         -webkit-animation-iteration-count: 1;
@@ -518,7 +522,7 @@ a {
         -webkit-animation: mymove 0.9s;
         animation: mymove 0.9s;
         -webkit-animation-delay: 1s;
-        animation-delay: 1s;
+        animation-delay: 0.8s;
         -webkit-transform: translateY(10px);
         transform: translateY(10px);
         -webkit-animation-iteration-count: 1;
@@ -531,7 +535,7 @@ a {
         -webkit-animation: mymove 0.9s;
         animation: mymove 0.9s;
         -webkit-animation-delay: 1.3s;
-        animation-delay: 1.3s;
+        animation-delay: 1s;
         -webkit-transform: translateY(10px);
         transform: translateY(10px);
         -webkit-animation-iteration-count: 1;
@@ -544,7 +548,7 @@ a {
         -webkit-animation: mymove 0.9s;
         animation: mymove 0.9s;
         -webkit-animation-delay: 1.5s;
-        animation-delay: 1.5s;
+        animation-delay: 1.2s;
         -webkit-transform: translateY(10px);
         transform: translateY(10px);
         -webkit-animation-iteration-count: 1;
@@ -557,7 +561,7 @@ a {
         -webkit-animation: mymove 0.9s;
         animation: mymove 0.9s;
         -webkit-animation-delay: 1.7s;
-        animation-delay: 1.7s;
+        animation-delay: 1.4s;
         -webkit-transform: translateY(10px);
         transform: translateY(10px);
         -webkit-animation-iteration-count: 1;
@@ -570,7 +574,7 @@ a {
         -webkit-animation: mymove 0.9s;
         animation: mymove 0.9s;
         -webkit-animation-delay: 1.9s;
-        animation-delay: 1.9s;
+        animation-delay: 1.6s;
         -webkit-transform: translateY(10px);
         transform: translateY(10px);
         -webkit-animation-iteration-count: 1;
@@ -583,7 +587,7 @@ a {
         -webkit-animation: mymove 0.9s;
         animation: mymove 0.9s;
         -webkit-animation-delay: 2.1s;
-        animation-delay: 2.1s;
+        animation-delay: 1.8s;
         -webkit-transform: translateY(10px);
         transform: translateY(10px);
         -webkit-animation-iteration-count: 1;
@@ -596,7 +600,7 @@ a {
         -webkit-animation: mymove 0.9s;
         animation: mymove 0.9s;
         -webkit-animation-delay: 2.3s;
-        animation-delay: 2.3s;
+        animation-delay: 2s;
         -webkit-transform: translateY(10px);
         transform: translateY(10px);
         -webkit-animation-iteration-count: 1;
@@ -706,9 +710,6 @@ a {
 
 /* NAVBAR-CSS-END */
 
-
-
-
 /* ================================== HERO SECTION START ============================================== */
 .main-top-section {
     background-image: url("/assets/image/png/hero_bg.png");
@@ -721,9 +722,15 @@ a {
 .google_review_box {
     background-color: var(--white-color);
     border-radius: 16px;
-    padding: 8.33px 16px 6px 16px;
+    padding: 6px 16px 6px 16px;
     width: 229.17px;
     height: 80px;
+    border: 1px solid var(--white-color);
+    transition: 0.3s ease-in-out;
+}
+
+.google_review_box:hover {
+    border: 1px solid var(--red-color) !important;
 }
 
 .installer_hero_icon {
@@ -735,9 +742,6 @@ a {
     border: 1px solid var(--white-color) !important;
     color: var(--white-color) !important;
 }
-
-
-
 
 
 /* ============== WHAT WE DO CSS ============= */
@@ -761,20 +765,19 @@ a {
 .what_we_do_img {
     width: 316px;
     height: 246px;
+    border-radius: 12px;
 }
 
-.learn_more svg {
+.learn_more img {
     transition: 0.3s ease-in-out;
 }
 
-.learn_more:hover svg {
+.learn_more:hover img {
     margin-left: 16px !important;
 }
 
 
-
 /* ============== WHY CHOOSE US ============= */
-
 
 .why_choose_section {
     background-color: var(--background-light);
@@ -796,7 +799,7 @@ a {
     padding: 17px 32.4px;
     border: 1px solid var(--red-color);
     border-radius: 56px;
-    transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out !important;
     color: var(--white-color);
 }
 
@@ -807,7 +810,7 @@ a {
 
 .red_box {
     width: 300px;
-    height: 369px;
+    height: 396px;
     background-color: var(--red-color);
     border-radius: 24px;
     left: 0;
@@ -819,12 +822,15 @@ a {
     z-index: 2;
 }
 
-.main_red_box {
-    height: 603px;
-}
-
 .why_choose_para {
     max-width: 590px;
+}
+
+.choose_img {
+    width: 469px;
+    height: 523px;
+    border-radius: 24px;
+    object-fit: cover;
 }
 
 
@@ -833,13 +839,11 @@ a {
     border: 1px solid var(--border-grey);
 }
 
-
 .slider_box {
     background-color: var(--white-color);
     height: 100% !important;
     box-shadow: 0px 2px 44px 3px #5757571A;
     border-radius: 24px;
-
 }
 
 .scrollbar_style ::-webkit-scrollbar {
@@ -851,6 +855,19 @@ a {
     width: 40px !important;
 }
 
+.slider_star_img img {
+    width: 24px !important;
+    height: 24px !important;
+}
+
+.slider_box {
+    border: 1px solid var(--white-color);
+    transition: 0.3s ease-in-out;
+}
+
+.slider_box:hover {
+    border: 1px solid var(--red-color);
+}
 
 
 /* ============== HOW IT WORKS ============= */
@@ -867,11 +884,12 @@ a {
 .works_box {
     box-shadow: 0px 1px 28px 1px #4747471A;
     border-radius: 24px;
-    transition: 0.3s all;
+    transition: 0.3s ease-in-out;
+    border: 1px solid var(--white-color);
 }
 
 .works_box:hover {
-    transform: scale(1.02);
+    border: 1px solid var(--red-color);
 }
 
 .view_tile_btn {
@@ -888,7 +906,12 @@ a {
     color: var(--white-color);
 }
 
-
+.works_img {
+    width: 435px;
+    height: 581px;
+    border-radius: 24px;
+    object-fit: cover;
+}
 
 /* ============== GET IN TOUCH WITH US ============= */
 .intersted_box {
@@ -901,7 +924,7 @@ a {
 }
 
 .get_in_touch {
-    max-width: 592px !important;
+    max-width: 620px !important;
 }
 
 .get_quote_button {
@@ -929,8 +952,14 @@ a {
 .blogs_card {
     box-shadow: 0px 0px 12px 3px #B6B6B640;
     border-radius: 24px;
+    border: 1px solid var(--white-color);
+    transition: 0.3s ease-in-out;
 }
 
+.blogs_card:hover {
+    box-shadow: none !important;
+    border: 1px solid var(--red-color);
+}
 
 
 /* ============== FAQ SECTION ============= */
@@ -954,7 +983,6 @@ a {
     color: var(--black-color) !important;
 }
 
-
 .accordion-button:focus {
     border-color: none !important;
     box-shadow: none !important;
@@ -974,26 +1002,34 @@ a {
 
 .accordion-button::after {
     flex-shrink: 0;
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 20px !important;
+    height: 20px !important;
     margin-left: auto;
     content: "";
     background-image: url("/assets/image/svg/faq_arrow.svg") !important;
     background-repeat: no-repeat;
-    background-size: 1.25rem;
+    background-size: 100% !important;
     transition: transform .2s ease-in-out;
 }
-
 
 /* ============== SERVICES CSS START ============= */
 .services_box {
     box-shadow: 0px 1px 28px 1px #4747471A;
     border-radius: 24px;
     transition: 0.3s all;
+    border: 1px solid var(--white-color);
 }
 
 .services_box:hover {
-    transform: scale(1.02);
+    border: 1px solid var(--red-color);
+}
+
+.slick-slide {
+    padding: 10px;
+}
+
+.slick-list {
+    margin: 0 -10px;
 }
 
 
@@ -1014,8 +1050,16 @@ a {
     height: 86px;
 }
 
+.footer_link {
+    transition: 0.3s ease-in-out;
+}
+
 .footer_link:hover {
     color: var(--red-color) !important;
+}
+
+.mail_hover {
+    transition: 0.3s ease-in-out;
 }
 
 .mail_hover:hover {
@@ -1027,7 +1071,6 @@ a {
     height: 74px;
     background-color: var(--white-color) !important;
     border: 1px solid var(--grey-color) !important;
-    width: 340px;
     padding: 9.14px 10px 9.14px 25px;
 }
 
@@ -1037,11 +1080,25 @@ a {
 
 
 .copyright_border {
-    border-top: 1px solid var(--grey);
-
+    background-image: linear-gradient(90deg, hsla(0, 0%, 9%, 0), #696969 51.56%, hsla(0, 0%, 9%, 0));
+    height: 2px !important;
 }
 
+.foter_newslater {
+    width: 340px;
+}
 
+.legal_parent {
+    width: 110px;
+}
+
+.footer_product {
+    width: 150px;
+}
+
+.footer_links {
+    width: 140px;
+}
 
 
 /* ================================== BACK TO TOP CSS START ============================================== */
@@ -1056,7 +1113,7 @@ a {
     height: 60px;
     width: 60px;
     border-radius: 50% !important;
-    border: none;
+    border: 1px solid var(--white-color);
     background: var(--red-color);
     transition: all 0.3s ease-in-out;
 }
@@ -1111,6 +1168,14 @@ a {
 
 
 /* ============== MEDIA QUERY START ============= */
+
+@media(min-width:1920.98px) {
+    .slick-list {
+        width: 1140px !important;
+        margin: auto !important;
+    }
+}
+
 @media(min-width:1400px) {
     .container {
         max-width: 1140px !important;
@@ -1126,6 +1191,22 @@ a {
     .what_we_do_img {
         width: 100%;
     }
+
+    .choose_img {
+        width: 376px;
+        height: 500px;
+    }
+
+    .works_img {
+        width: 350px;
+        height: 558px;
+    }
+}
+
+@media(min-width:992px) {
+    .main_red_box {
+        height: 603px;
+    }
 }
 
 @media(max-width:991.98px) {
@@ -1140,11 +1221,46 @@ a {
     .main_box {
         width: 100%;
     }
+
+    .works_box {
+        max-width: 592px;
+    }
+
+    .choose_img {
+        width: 469px;
+        height: 500px;
+    }
+
+    .works_img {
+        width: 469px;
+        height: 500px;
+    }
 }
 
 @media (max-width:767.98px) {
     .accordion-body {
         padding: 0px 40px 25.21px 20px !important;
+    }
+
+    #myBtn {
+        height: 46px;
+        width: 46px;
+        bottom: 12px;
+        right: 12px;
+    }
+
+    .foter_newslater {
+        width: 100%;
+    }
+
+    .main_box {
+        height: 54px;
+        padding: 9.14px 0px 9.14px 25px;
+    }
+
+    .blogs_card {
+        width: 364px;
+        margin: auto;
     }
 }
 
@@ -1155,16 +1271,13 @@ a {
     }
 
     .choose_img {
-        width: 80%;
+        width: 100%;
+        height: 350px;
+        border-radius: 12px;
     }
 
     .line_height_paragraph {
         line-height: 24px !important;
-    }
-
-    .blogs_card {
-        width: 364px;
-        margin: auto;
     }
 
     .accordion-button {
@@ -1178,6 +1291,8 @@ a {
     .services_box {
         width: 364px;
         margin: auto;
+        border-radius: 12px;
+        width: 100%;
     }
 
     .nav-quantum {
@@ -1186,6 +1301,51 @@ a {
 
     .customer_review_card {
         width: 229px;
+    }
+
+    .works_box {
+        max-width: 100%;
+    }
+
+    .review_padding_right {
+        margin-right: 5px !important;
+    }
+
+    .footer_product {
+        width: 100%;
+    }
+
+    .navbar_btn {
+        padding: 9.91px 14.96px !important;
+    }
+
+    .star_box {
+        width: 52px;
+        height: 52px;
+    }
+
+    .star_para {
+        max-width: 100%;
+    }
+
+    .line_height_para {
+        line-height: 21px !important;
+    }
+
+    .works_img {
+        width: 100%;
+        height: 350px;
+        border-radius: 12px;
+    }
+}
+
+@media(max-width:485.98px) {
+    .review_padding_right {
+        margin-right: 0px !important;
+    }
+
+    .why_choose_material {
+        width: 240px;
     }
 }
 
@@ -1201,10 +1361,23 @@ a {
     .red_box {
         width: 236px;
         height: 250px;
-        bottom: 140px;
+        bottom: 36px;
     }
 
-    .services_box {
-        width: 100%;
+    .view_tile_btn {
+        padding: 14px 20.4px;
+    }
+
+    .get_quote_btn {
+        padding: 14px 20.4px;
+    }
+
+    .red_box_second {
+        width: 236px;
+        height: 250px;
+    }
+
+    .services_box img {
+        width: 26px;
     }
 }

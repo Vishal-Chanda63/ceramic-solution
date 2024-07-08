@@ -164,3 +164,43 @@
          },
      ]
  });
+
+
+
+
+
+
+ $('.responsive').slick({
+     dots: false,
+     infinite: true,
+     autoplay: true,
+     autoplaySpeed: 3500,
+     arrows: false,
+     speed: 500,
+     slidesToShow: 3,
+     slidesToScroll: 1,
+     responsive: [{
+             breakpoint: 992,
+             settings: {
+                 slidesToShow: 2,
+                 slidesToScroll: 1,
+                 infinite: true,
+                 dots: false,
+                 arrows: false,
+             }
+         },
+         {
+             breakpoint: 767,
+             settings: {
+                 slidesToShow: 1,
+             }
+         },
+         {
+             breakpoint: 576,
+             settings: {
+                 slidesToShow: 1,
+             }
+         },
+
+     ]
+ });
